@@ -5,7 +5,7 @@ LABEL maintainer="InspIRCd Team <noreply@inspircd.org>"
 ARG VERSION=insp3
 ARG CONFIGUREARGS=
 ARG EXTRASMODULES=mysql
-ARG BUILD_DEPENDENCIES=libmysqlclient
+ARG BUILD_DEPENDENCIES=
 
 # Stage 0: Build from source
 COPY modules/ /src/modules/
