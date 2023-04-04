@@ -3,7 +3,7 @@ FROM alpine:3.17 as builder
 LABEL maintainer="InspIRCd Team <noreply@inspircd.org>"
 
 ARG VERSION=insp3
-ARG CONFIGUREARGS=--enable-extras ssl_gnutls --enable-extras mysql
+ARG CONFIGUREARGS="--enable-extras ssl_gnutls --enable-extras mysql"
 ARG EXTRASMODULES=
 ARG BUILD_DEPENDENCIES=
 
