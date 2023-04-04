@@ -5,7 +5,7 @@ LABEL maintainer="InspIRCd Team <noreply@inspircd.org>"
 ARG VERSION=insp3
 ARG CONFIGUREARGS="--enable-extras ssl_gnutls --enable-extras mysql"
 ARG EXTRASMODULES=
-ARG BUILD_DEPENDENCIES=
+ARG BUILD_DEPENDENCIES="libmysqlclient-dev"
 
 # Stage 0: Build from source
 COPY modules/ /src/modules/
